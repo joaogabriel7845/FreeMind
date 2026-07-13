@@ -1,16 +1,78 @@
-# React + Vite
+# 🧠 FreeMind
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Aplicação de anotações pessoais com suporte a **Markdown**, organização por categorias e tema claro/escuro.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Funcionalidades
 
-## React Compiler
+- 📁 **Categorias** — crie, edite e delete categorias com nome e imagem
+- 📝 **Anotações** — crie e edite anotações com suporte completo a Markdown
+- 👁️ **Preview em tempo real** — visualize o Markdown formatado enquanto escreve
+- 🌙 **Tema claro/escuro** — alternância de tema persistida no navegador
+- 💾 **Persistência local** — dados salvos automaticamente no localStorage
+- 📱 **Responsivo** — layout adaptado para mobile e desktop
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## 🛠️ Tecnologias
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS v4](https://tailwindcss.com/)
+- [React Router DOM](https://reactrouter.com/)
+- [react-markdown](https://github.com/remarkjs/react-markdown)
+- [remark-gfm](https://github.com/remarkjs/remark-gfm)
+- [Font Awesome](https://fontawesome.com/)
+
+---
+
+## 🚀 Como rodar localmente
+
+```bash
+# Clone o repositório
+git clone https://github.com/joaogabriel7845/FreeMind
+
+# Entre na pasta
+cd FreeMind
+
+# Instale as dependências
+npm install
+
+# Rode o projeto
+npm run dev
+```
+
+Acesse em `http://localhost:5173`
+
+---
+
+## 📁 Estrutura do projeto
+
+```
+src/
+├── components/       # Componentes reutilizáveis
+│   ├── Header.jsx
+│   ├── Hero.jsx
+│   ├── CategoryCard.jsx
+│   ├── NoteCard.jsx
+│   ├── AddButton.jsx
+│   ├── Input.jsx
+│   ├── TextArea.jsx
+│   └── Footer.jsx
+├── context/          # Contextos globais
+│   ├── ThemeContext.jsx
+│   └── NotesContext.jsx
+├── pages/            # Páginas da aplicação
+│   ├── NotesPage.jsx
+│   └── NoteDetailsPage.jsx
+└── main.jsx
+```
+
+---
+
+## 📌 Sobre
+
+Projeto desenvolvido para uso pessoal com foco em aprendizado de React — incluindo `useContext`, `useEffect`, React Router, localStorage e boas práticas de componentização.
+
+Desenvolvido por [João Gabriel](https://github.com/joaogabriel7845)
