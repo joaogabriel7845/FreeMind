@@ -86,7 +86,7 @@ function NoteDetailsPage() {
 
                         <h1 className="text-2xl font-semibold">Preview da Anotação</h1>
 
-                        <div className={`h-full flex-1 flex flex-col gap-2 p-5 border ${theme.border} rounded-md shadow-md font-[Inter] *:mb-2 [&_table]:w-full [&_table]:border-collapse [&_th]:border [&_th]:p-2 [&_td]:border [&_td]:p-2 [&_h1]:text-2xl [&_a]:text-blue-500 [&_a]:underline [&_ul]:list-disc [&_ul]:pl-5 [&_ol]:list-decimal [&_ol]:pl-5 [&_h3]:text-lg [&_h3]:font-semibold [&_h1]:font-bold [&_h2]:text-xl [&_h2]:font-semibold [&_strong]:font-bold [&_em]:italic `}>
+                        <div className={`h-full flex-1 flex flex-col gap-2 p-5 border ${theme.border} rounded-md shadow-md font-[Inter] *:mb-2 [&_table]:w-full [&_table]:border-collapse [&_th]:border [&_th]:p-2 [&_td]:border [&_td]:p-2 [&_h1]:text-2xl [&_a]:text-blue-500 [&_a]:underline [&_ul]:list-disc [&_ul]:flex [&_ul]:flex-col [&_ul]:gap-2.5 [&_ul]:pl-5 [&_ol]:list-decimal [&_ol]:pl-5 [&_h3]:text-lg [&_h3]:font-semibold [&_h1]:font-bold [&_h2]:text-xl [&_h2]:font-semibold [&_strong]:font-bold [&_em]:italic `}>
                             <ReactMarkDown remarkPlugins={[remarkGfm]}>{note.content === "" ? noteEmpty : note.content}</ReactMarkDown>
                         </div>
 
