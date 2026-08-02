@@ -33,7 +33,7 @@ function Hero() {
     }
 
     return (
-        <div className={`${theme.text} mt-30 flex-1 flex flex-col gap-5 font-['Darker_Grotesque']`}>
+        <div className={`${theme.text} flex-1 flex flex-col gap-5 font-['Darker_Grotesque']`}>
 
             {
                 modalView && (
@@ -83,18 +83,18 @@ function Hero() {
                 )
             }
 
-            <div className={`flex flex-col gap-3 p-10 pt-15`}>
+            <div className={`flex flex-col gap-3 px-5 pt-30`}>
                 <h1 className="text-6xl font-semibold text-center">Crie anotações sobre quaisquer assuntos.</h1>
                 <p className="text-3xl font-medium text-center ">Use seu tempo como quiser !</p>
+                <div className="flex justify-center items-center">
+                    <div className={`w-200 border-t ${theme.border}`}></div>
+                </div>
+
+                <div className="p-5">
+                    <h1 className="text-5xl text-center font-semibold">Adicione Categorias</h1>
+                </div>
             </div>
 
-            <div className="flex justify-center items-center">
-                <div className={`w-200 border-t ${theme.border}`}></div>
-            </div>
-
-            <div className="p-5">
-                <h1 className="text-5xl text-center font-semibold">Adicione Categorias</h1>
-            </div>
 
             <div className="flex flex-1 p-5 ">
                 <div className={`w-full grid items-center text-4xl gap-10 border ${theme.border} p-5 rounded-2xl shadow-md overflow-auto`}>

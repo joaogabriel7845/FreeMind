@@ -9,7 +9,7 @@ function Header() {
     const {isDark, setIsDark, theme} = useContext(ThemeContext)
 
     return (
-        <div className={`transition-all w-full fixed z-50 flex justify-between items-center p-8 border-b shadow-md border-black/20 ${theme.bgHeader}`}>
+        <div className={`transition-all w-full fixed z-50 flex justify-between items-center px-8 py-5 border-b shadow-md border-black/20 ${theme.bgHeader}`}>
 
             <h1 className={`text-2xl ${theme.text} font-bold font-['Darker_Grotesque']`}>Free<span className="text-[#1985A1]">Mind</span></h1>
 
